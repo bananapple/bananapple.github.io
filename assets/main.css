@@ -254,6 +254,8 @@ a {
       display: block;
       font-size: 0.6em;
       color: #c4c4c4; }
+  .pagination .pagination-group > a {
+    border: none; }
   .pagination .pagination-group > * {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -597,11 +599,8 @@ body.down header.clone {
       z-index: -10; }
     .opening-animation .wheels .spiralbody div, .opening-animation .wheels .spiralbody {
       position: absolute;
-      right: -1em;
-      top: -3px;
-      width: 1em;
-      height: 1em;
-      font-size: 1.2em;
+      width: 140%;
+      height: 140%;
       border-top: 3px solid #3f3f3f;
       border-left: 3px solid #3f3f3f;
       border-radius: 100% 0 0 0;
@@ -609,9 +608,8 @@ body.down header.clone {
               transform: rotate(90deg);
       box-sizing: border-box; }
     .opening-animation .wheels .spiralbody {
-      font-size: 6px;
-      top: 20px;
-      left: 20px;
+      top: -10px;
+      left: -10px;
       -webkit-animation: spiralspin 120000s infinite linear;
               animation: spiralspin 120000s infinite linear; }
   .opening-animation .speed {
@@ -829,7 +827,8 @@ body.down header.clone {
     line-height: 1.6em; }
   .desigflow-header .slogan-small {
     line-height: 1em;
-    margin-bottom: 6px; }
+    margin-bottom: 6px;
+    color: #444; }
     @media screen and (max-width: 736px) {
       .desigflow-header .slogan-small {
         font-size: 20px;
@@ -899,8 +898,7 @@ body.down header.clone {
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
   z-index: -10;
-  width: 100%;
-  border-bottom: 2px solid #F8E71C; }
+  width: 100%; }
   .designflow-background img {
     width: 100%; }
     @media screen and (max-width: 736px) {
@@ -1108,30 +1106,22 @@ body.down header.clone {
 
 @-webkit-keyframes msg-pop {
   0% {
-    -webkit-transform: translateY(100%);
-            transform: translateY(100%);
     opacity: 0; }
   40% {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
+    opacity: 1; }
+  80% {
     opacity: 1; }
   100% {
-    -webkit-transform: translateY(100%);
-            transform: translateY(100%);
-    opacity: 1; } }
+    opacity: 0; } }
 
 @keyframes msg-pop {
   0% {
-    -webkit-transform: translateY(100%);
-            transform: translateY(100%);
     opacity: 0; }
   40% {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
+    opacity: 1; }
+  80% {
     opacity: 1; }
   100% {
-    -webkit-transform: translateY(100%);
-            transform: translateY(100%);
-    opacity: 1; } }
+    opacity: 0; } }
 body {
   background-color: #f6f6f6; }
