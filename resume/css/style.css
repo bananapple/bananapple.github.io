@@ -1,0 +1,229 @@
+/*bootstrap override*/
+.nav-pills>li.active>a, .nav-pills>li.active>a:focus, .nav-pills>li.active>a:hover {
+  color: rgba(0,0,0,0.6);
+  background-color: transparent;
+}
+.nav>li>a{
+  padding: 0;
+}
+a { color: rgba(0,0,0,0.6); text-decoration: none;}
+
+a:focus, a:hover { color: rgba(0,0,0,0.8);}
+
+.nav>li>a:focus, .nav>li>a:hover {
+    text-decoration: none;
+    background: transparent;
+}
+
+/*lightbox override*/
+.modal-header {border-bottom: initial;}
+.modal-header .close{ color: #fff; opacity: 0.6;}
+.modal-header .close:hover{opacity: 0.8;}
+.modal-header .close:focus {outline: none;}
+.modal-content {
+  background-color: transparent;
+  -webkit-box-shadow: initial;
+  box-shadow: initial;
+  border: none;
+}
+
+.ekko-lightbox-nav-overlay a{
+  text-shadow: none;
+  opacity: 0.5;
+}
+
+.ekko-lightbox a:hover,
+.ekko-lightbox a:focus{
+  color: rgba(255,255,255,0.9);
+  text-decoration: none;
+}
+
+.ekko-lightbox .glyphicon-chevron-left{
+  padding: 0;
+  left: -40px;
+}
+.ekko-lightbox .glyphicon-chevron-right{
+  padding: 0;
+  right: -40px;
+}
+
+.modal-backdrop.in {
+    filter: alpha(opacity=85);
+    opacity: .85;
+}
+
+.wrapper-parent div{
+  margin-bottom: 14px;
+}
+
+body {
+  position: relative;
+  background-color: #E2E2E2;
+  -webkit-font-smoothing: subpixel-antialiased;
+}
+
+.affix {
+  top: 20px;
+}
+
+h1{
+  font-family: "serifa";
+  font-size: 40px;
+  font-weight: normal;
+}
+
+h2{
+  font-family: "roboto","a-otf-ud-shin-go-pr6n", sans-serif;
+  font-weight: bold;
+  font-size: 30px;
+  color: rgba(0,0,0,0.7);
+  display: inline-block;
+}
+
+h3{
+  font-family: "roboto","a-otf-ud-shin-go-pr6n", sans-serif;
+  font-weight: normal;
+  color: rgba(0,0,0,0.6);
+}
+
+ul li{
+  margin-bottom: 5px;
+  font-weight: 400;
+}
+
+.portfolio .portfolio-list span.portfolio-item{
+  width: 120px;
+  text-align: right;
+  display: block;
+  font-size: 16px;
+  line-height: 24px;
+  padding: 4px 4px 0 0;
+}
+.portfolio .portfolio-list span.portfolio-tag{
+  position: absolute;
+  top: 4px;
+  margin-left: 125px;
+  font-family: "roboto",sans-serif;
+  font-style: italic;
+  opacity: 0.5;
+}
+
+.portfolio-list.active span.portfolio-item{
+  background-color: rgba(255,255,0,0.8);
+  transition: 0.5s;
+}
+
+.portfolio .description{
+  font-size: 18px;
+  display: inline-block;
+  padding-bottom: 2px;
+}
+
+.portfolio p{
+  font-weight: 400;
+  color: rgba(0,0,0,0.5);
+  font-size: 16px;
+  font-family: "a-otf-ud-shin-go-pr6n", "roboto", sans-serif;;
+}
+
+ul {
+  font-size: 16px;
+  font-family: "a-otf-ud-shin-go-pr6n", sans-serif;;
+}
+
+.portfolio .information { position: relative; margin-top: 30px;}
+.portfolio .information img{
+  display: block;
+  margin: 0 auto;
+}
+
+.portfolio .information img{
+  opacity: 0.5;
+  transition: 0.2s;
+}
+
+.portfolio .information img:hover{
+  opacity: 1;
+  transition: 0.25s;
+}
+
+.information.active a:before{
+  content:'';
+  display: block;
+  position: absolute;
+  border-radius: 100%;
+  width: 60px;
+  height: 60px;
+  background-color: rgba(255,2525,0,0.5);
+  left: 32px;
+  z-index: -1;
+}
+
+.portfolio .misc{
+  min-height: 90vh;
+}
+
+div.col-sm-9 > div {
+  margin-bottom: 80px;
+}
+
+.misc .wrapper-parent img{
+  opacity: 0.8;
+  transition: 0.2s;
+}
+
+.misc .wrapper-parent img:hover{
+  opacity: 1;
+  transition: 0.2s;
+}
+
+.misc a:hover{
+  text-decoration: none;
+  border-bottom: 2px solid rgba(255,255,0,0.5);
+  padding-bottom: 2px;
+}
+
+.misc .wrapper-parent a:hover{
+  border: none;
+}
+
+.jborder{
+  padding-bottom: 40px;
+  border-bottom: dashed 1px rgba(0,0,0,0.5);
+}
+
+.dashborder{
+  border-bottom: dashed 1px rgba(0,0,0,0.1);
+  padding-bottom: 20px;
+}
+
+.intro{
+  margin: 10px 0;
+}
+
+.position ul li{
+  color: rgba(0, 0, 0, 0.4);
+}
+
+@media only screen and (max-width: 768px){
+  .navbar-default .navbar-nav>.active>a,
+  .navbar-default .navbar-nav>.active>a:focus,
+  .navbar-default .navbar-nav>.active>a:hover{
+    background-color: rgb(255,255,0);
+  }
+  .navbar-default .navbar-nav>.information.active>a,
+  .navbar-default .navbar-nav>.information.active>a:focus,
+  .navbar-default .navbar-nav>.information.active>a:hover{
+    background-color: transparent;
+  }
+  .navbar-default .navbar-nav>li>a{
+    padding: 10px 20px;
+  }
+  h1{
+    margin: 0;
+    padding: 16px 15px;
+  }
+  div.col-sm-9 > div {
+    padding-top: 50px;
+  }
+}
