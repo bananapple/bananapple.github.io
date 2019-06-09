@@ -1,2 +1,2 @@
 # 80ssundries
-my website
+My illustrattion portflio.
