@@ -534,18 +534,18 @@ body.down header.clone {
     .sockrollers-wrap .wheels .spiral-wheel-mask {
       background-color: #ffffff;
       border: 3px solid #3f3f3f;
-      width: 14px;
-      height: 14px;
+      width: 15px;
+      height: 15px;
       position: relative;
       overflow: hidden;
       border-radius: 100%;
       z-index: -10; }
     .sockrollers-wrap .wheels .spiralbody div, .sockrollers-wrap .wheels .spiralbody {
       position: absolute;
-      width: 120%;
-      height: 120%;
-      border-top: 3px solid #3f3f3f;
-      border-left: 3px solid #3f3f3f;
+      width: 100%;
+      height: 100%;
+      border-top: 0.4em solid #3f3f3f;
+      border-left: 0.4em solid #3f3f3f;
       border-radius: 100% 0 0 0;
       -webkit-transform: rotate(90deg);
               transform: rotate(90deg);
